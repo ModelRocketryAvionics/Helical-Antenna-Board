@@ -1,0 +1,41 @@
+(export (version D)
+  (design
+    (source "C:/Users/harri/Documents/GitHub/Model Rocketry/Helical-Antenna-Board/antenna-board.sch")
+    (date "2018-07-17 2:04:25 PM")
+    (tool "Eeschema 4.0.7")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source antenna-board.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref U1)
+      (value U.FLport)
+      (footprint HelicalAntennaBoard:u.fl-port)
+      (libsource (lib antenna-board) (part U.FLport))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5B4E3B5D)))
+  (libparts
+    (libpart (lib antenna-board) (part U.FLport)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) U.FLport))
+      (pins
+        (pin (num 1) (name GND) (type input))
+        (pin (num 2) (name GND) (type input))
+        (pin (num 3) (name DATA) (type input)))))
+  (libraries
+    (library (logical antenna-board)
+      (uri "C:\\Users\\harri\\Documents\\GitHub\\Model Rocketry\\Helical-Antenna-Board\\antenna-board.lib")))
+  (nets
+    (net (code 1) (name GNDREF)
+      (node (ref U1) (pin 1))
+      (node (ref U1) (pin 2)))
+    (net (code 2) (name DATA)
+      (node (ref U1) (pin 3)))))
