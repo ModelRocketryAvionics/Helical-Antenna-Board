@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:/Users/harri/Documents/GitHub/Model Rocketry/Helical-Antenna-Board/antenna-board.sch")
-    (date "2018-07-17 2:04:25 PM")
+    (date "2018-07-17 2:26:29 PM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -18,10 +18,33 @@
     (comp (ref U1)
       (value U.FLport)
       (footprint HelicalAntennaBoard:u.fl-port)
+      (fields
+        (field (name "Digikey Part No.") H125761CT-ND))
       (libsource (lib antenna-board) (part U.FLport))
       (sheetpath (names /) (tstamps /))
-      (tstamp 5B4E3B5D)))
+      (tstamp 5B4E3B5D))
+    (comp (ref J1)
+      (value Conn_01x01)
+      (footprint HelicalAntennaBoard:antenna_connector)
+      (libsource (lib conn) (part Conn_01x01))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5B4E5B0D)))
   (libparts
+    (libpart (lib conn) (part Conn_01x01)
+      (description "Generic connector, single row, 01x01")
+      (docs ~)
+      (footprints
+        (fp Connector*:*_??x*mm*)
+        (fp Connector*:*1x??x*mm*)
+        (fp Pin?Header?Straight?1X*)
+        (fp Pin?Header?Angled?1X*)
+        (fp Socket?Strip?Straight?1X*)
+        (fp Socket?Strip?Angled?1X*))
+      (fields
+        (field (name Reference) J)
+        (field (name Value) Conn_01x01))
+      (pins
+        (pin (num 1) (name Pin_1) (type passive))))
     (libpart (lib antenna-board) (part U.FLport)
       (fields
         (field (name Reference) U)
@@ -31,6 +54,8 @@
         (pin (num 2) (name GND) (type input))
         (pin (num 3) (name DATA) (type input)))))
   (libraries
+    (library (logical conn)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical antenna-board)
       (uri "C:\\Users\\harri\\Documents\\GitHub\\Model Rocketry\\Helical-Antenna-Board\\antenna-board.lib")))
   (nets
@@ -38,4 +63,5 @@
       (node (ref U1) (pin 1))
       (node (ref U1) (pin 2)))
     (net (code 2) (name DATA)
-      (node (ref U1) (pin 3)))))
+      (node (ref U1) (pin 3))
+      (node (ref J1) (pin 1)))))

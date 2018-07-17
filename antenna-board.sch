@@ -89,7 +89,7 @@ U 1 1 5B4E5B0D
 P 5500 5200
 F 0 "J1" H 5500 5300 50  0000 C CNN
 F 1 "Conn_01x01" H 5500 5100 50  0000 C CNN
-F 2 "" H 5500 5200 50  0001 C CNN
+F 2 "HelicalAntennaBoard:antenna_connector" H 5500 5200 50  0001 C CNN
 F 3 "" H 5500 5200 50  0001 C CNN
 	1    5500 5200
 	0    1    1    0   
