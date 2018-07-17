@@ -53,8 +53,9 @@ U 1 1 5B4E3B5D
 P 5500 3750
 F 0 "U1" H 5300 3950 60  0000 C CNN
 F 1 "U.FLport" H 5700 3350 60  0000 C CNN
-F 2 "" H 5500 3750 60  0001 C CNN
+F 2 "HelicalAntennaBoard:u.fl-port" H 5500 3750 60  0001 C CNN
 F 3 "" H 5500 3750 60  0001 C CNN
+F 4 "H125761CT-ND" H 5500 3750 60  0001 C CNN "Digikey Part No."
 	1    5500 3750
 	1    0    0    -1  
 $EndComp
@@ -81,5 +82,18 @@ F 3 "" H 5050 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5500 4250 3    60   Input ~ 0
+DATA
+$Comp
+L Conn_01x01 J?
+U 1 1 5B4E5B0D
+P 5500 5200
+F 0 "J?" H 5500 5300 50  0000 C CNN
+F 1 "Conn_01x01" H 5500 5100 50  0000 C CNN
+F 2 "" H 5500 5200 50  0001 C CNN
+F 3 "" H 5500 5200 50  0001 C CNN
+	1    5500 5200
+	0    1    1    0   
+$EndComp
+Text GLabel 5500 5000 1    60   Input ~ 0
 DATA
 $EndSCHEMATC
