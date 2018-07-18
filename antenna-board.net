@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:/Users/harri/Documents/GitHub/Model Rocketry/Helical-Antenna-Board/antenna-board.sch")
-    (date "2018-07-17 2:26:29 PM")
+    (date "2018-07-17 8:26:29 PM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
